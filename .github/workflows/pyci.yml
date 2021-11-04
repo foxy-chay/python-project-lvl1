@@ -16,4 +16,5 @@ jobs:
           make install
 
     - name: run linter
-      run: make lint
+      run: |
+          make lint
