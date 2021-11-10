@@ -1,4 +1,3 @@
-import prompt
 from brain_games.games import functions
 
 
@@ -11,17 +10,19 @@ def start():
 def game():
     random_number = make_question()
     user_answer = functions.request_answer()
-    is_answer_correct, right_answer = check_user_answer(random_number, user_answer)
+    is_answer_correct, right_answer = check(random_number, user_answer)
     return (right_answer, user_answer, is_answer_correct)
 
-    
+
 def make_question():
     random_number = functions.random_number()
     print('Question: {}'.format(random_number))
     return random_number
 
-def check_user_answer(number, answer):
-    if (number % 2 == 0 and answer == 'yes') or (number % 2 == 1 and answer == 'no'):
+
+def check(number, answer):
+    if (number % 2 == 0 and answer == 'yes') or \
+       (number % 2 == 1 and answer == 'no'):
         print('Correct!')
         right_answer = answer
         return (True, right_answer)

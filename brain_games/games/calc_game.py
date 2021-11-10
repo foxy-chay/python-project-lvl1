@@ -1,4 +1,3 @@
-import prompt
 from operator import mul, add, sub
 from brain_games.games import functions
 
@@ -20,14 +19,14 @@ def make_question():
     random_number1 = functions.random_number()
     random_number2 = functions.random_number()
     random_math_symbol = functions.get_math_symbol()
-    print('Question: {} {} {}'.format(random_number1, random_math_symbol, random_number2))
+    ask = '{} {} {}'.format(random_number1, random_math_symbol, random_number2)
+    print('Question: {}'.format(ask))
     result = calculation(random_number1, random_number2, random_math_symbol)
-  #  print ('Right answer: {}'.format(result))
     return result
 
 
 def calculation(first_number, second_number, math_symbol):
-    dic = {'+':add, '-':sub, '*':mul}
+    dic = {'+': add, '-': sub, '*': mul}
     try:
         result = dic[math_symbol](first_number, second_number)
     except KeyError:
@@ -39,6 +38,6 @@ def check_user_answer(right_answer, user_answer):
     x = int(right_answer)
     y = int(user_answer)
     if x == y:
-        print ('Correct!')
+        print('Correct!')
         return True
     return False
