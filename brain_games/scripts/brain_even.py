@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-from .. import even_odd_game
+from brain_games.games import even_odd_game
 
 
 def main():
-    even_odd_game.greeting()
+    even_odd_game.start()
 
 
 if __name__ == '__main__':
