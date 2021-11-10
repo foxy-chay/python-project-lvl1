@@ -11,7 +11,7 @@ def start():
 def game():
     right_answer = make_question()
     user_answer = functions.request_answer()
-    is_answer_correct = check_user_answer(right_answer, user_answer)
+    is_answer_correct = functions.check_user_answer(right_answer, user_answer)
     return (right_answer, user_answer, is_answer_correct)
 
 
@@ -32,12 +32,3 @@ def calculation(first_number, second_number, math_symbol):
     except KeyError:
         return "Invalid Operator"
     return result
-
-
-def check_user_answer(right_answer, user_answer):
-    x = int(right_answer)
-    y = int(user_answer)
-    if x == y:
-        print('Correct!')
-        return True
-    return False

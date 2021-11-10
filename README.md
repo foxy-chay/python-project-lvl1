@@ -6,3 +6,5 @@
 ![Workflow](https://github.com/foxy-chay/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)
 
 https://asciinema.org/a/iDYSOjqrYxMhLUJ8wj7Rfojox
+
+https://asciinema.org/a/GGFEUgLYZihoH3chPW78JGtuP
