@@ -1,8 +1,13 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "educational project"
+classifiers = [
+    "Topic :: Software Development :: Beta"
+]
+
 authors = ["volochay <evgenia@volochay.info>"]
+repository = "https://github.com/foxy-chay/python-project-lvl1"
 packages = [
   { include = "brain_games" },
 ]
