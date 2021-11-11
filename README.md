@@ -14,7 +14,7 @@ Educational project
 ## Installation
 
 - Install Poetry into your system. Follow official installation guide for your OS: 
-  ![Installation Documentation](https://python-poetry.org/docs/#installation)
+  [Installation Documentation](https://python-poetry.org/docs/#installation)
 
 - Build and install the project into your system
   ```
@@ -27,4 +27,5 @@ Educational project
 [![Actions Status](https://github.com/foxy-chay/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/foxy-chay/python-project-lvl1/actions)
 
 ### Asciinema
+
 [![asciicast](https://asciinema.org/a/Czn6MMEt5saWPTro0NSDTal04.svg)](https://asciinema.org/a/Czn6MMEt5saWPTro0NSDTal04)
