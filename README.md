@@ -5,10 +5,12 @@
 
 ![Workflow](https://github.com/foxy-chay/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)
 
-https://asciinema.org/a/iDYSOjqrYxMhLUJ8wj7Rfojox
+https://asciinema.org/a/tmTuJqU3juck92BFvJWh6iu53
 
-https://asciinema.org/a/GGFEUgLYZihoH3chPW78JGtuP
+https://asciinema.org/a/1JUpBlMeJ40tB93NopcP5vT8k
 
-https://asciinema.org/a/y06aSKxGnCaKQwghL5pZsWmhH
+https://asciinema.org/a/kiAOSrGGY4qB3KcJGtILoKTLu
 
-https://asciinema.org/connect/f2595496-626e-465d-8a98-8095218d6e19
+https://asciinema.org/a/7iQUqGT0FaGTJ89CpJcJAs2Km
+
+https://asciinema.org/a/aJ0C4nZNP90rIh0qCDu9EC1c0
