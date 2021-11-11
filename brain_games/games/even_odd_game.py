@@ -15,7 +15,9 @@ def game():
 
 
 def make_question():
-    random_number = functions.random_number()
+    num1 = 1
+    num2 = 99
+    random_number = functions.random_number(num1, num2)
     print('Question: {}'.format(random_number))
     return random_number
 

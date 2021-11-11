@@ -25,8 +25,10 @@ def calculation(first_number, second_number):
 
 
 def make_question():
-    random_number1 = functions.random_number()
-    random_number2 = functions.random_number()
+    num1 = 1
+    num2 = 99
+    random_number1 = functions.random_number(num1, num2)
+    random_number2 = functions.random_number(num1, num2)
     question = '{} {}'.format(random_number1, random_number2)
     print('Question: {}'.format(question))
     result = calculation(random_number1, random_number2)

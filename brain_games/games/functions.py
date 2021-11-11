@@ -9,8 +9,8 @@ def greeting():
     return name
 
 
-def random_number():
-    i = random.randint(1, 99)
+def random_number(num1, num2):
+    i = random.randint(num1, num2)
     return i
 
 

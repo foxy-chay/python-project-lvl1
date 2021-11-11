@@ -16,8 +16,10 @@ def game():
 
 
 def make_question():
-    random_number1 = functions.random_number()
-    random_number2 = functions.random_number()
+    num1 = 1
+    num2 = 99
+    random_number1 = functions.random_number(num1, num2)
+    random_number2 = functions.random_number(num1, num2)
     random_math_symbol = functions.get_math_symbol()
     ask = '{} {} {}'.format(random_number1, random_math_symbol, random_number2)
     print('Question: {}'.format(ask))
