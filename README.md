@@ -1,16 +1,30 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/foxy-chay/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/foxy-chay/python-project-lvl1/actions)
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 ![Workflow](https://github.com/foxy-chay/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)
 
-https://asciinema.org/a/tmTuJqU3juck92BFvJWh6iu53
+# Brain games
 
-https://asciinema.org/a/1JUpBlMeJ40tB93NopcP5vT8k
+Educational project
 
-https://asciinema.org/a/kiAOSrGGY4qB3KcJGtILoKTLu
+## Dependencies
 
-https://asciinema.org/a/7iQUqGT0FaGTJ89CpJcJAs2Km
+- python 3.6+
+- make
 
-https://asciinema.org/a/aJ0C4nZNP90rIh0qCDu9EC1c0
+## Installation
+
+- Install Poetry into your system. Follow official installation guide for your OS: 
+  ![Installation Documentation](https://python-poetry.org/docs/#installation)
+
+- Build and install the project into your system
+  ```
+  make build
+  make package-install
+  ```
+
+## Hexlet tests and linter status:
+
+[![Actions Status](https://github.com/foxy-chay/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/foxy-chay/python-project-lvl1/actions)
+
+### Asciinema
+[![asciicast](https://asciinema.org/a/Czn6MMEt5saWPTro0NSDTal04.svg)](https://asciinema.org/a/Czn6MMEt5saWPTro0NSDTal04)
