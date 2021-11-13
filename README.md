@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/dc6fab120ad8c15eb8ca/maintainability)](https://codeclimate.com/github/foxy-chay/python-project-lvl1/maintainability)
 
 ![Workflow](https://github.com/foxy-chay/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)
 
