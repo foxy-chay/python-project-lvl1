@@ -1,32 +1,18 @@
-from brain_games.games import functions
+import random
 
 
-def start():
-
-    name = functions.greeting()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    functions.response_to_user(name, game)
-
-
-def game():
-
-    right_answer = make_question()
-    user_answer = functions.request_answer()
-    is_answer_correct = functions.check_user_answer(right_answer, user_answer)
-
-    return (right_answer, user_answer, is_answer_correct)
+INSTRUCTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def make_question():
 
-    num1 = 1
-    num2 = 99
-    random_number = functions.random_number(num1, num2)
-    print('Question: {}'.format(random_number))
+    num_min = 1
+    num_max = 99
+    random_number = random.randint(num_min, num_max)
     is_number_Prime = isPrime(random_number)
-    right_answer = get_right_answer(is_number_Prime)
+    correct_answer = get_correct_answer(is_number_Prime)
 
-    return right_answer
+    return (random_number, correct_answer)
 
 
 def isPrime(number):
@@ -40,7 +26,7 @@ def isPrime(number):
     return d * d > number
 
 
-def get_right_answer(is_number_prime):
+def get_correct_answer(is_number_prime):
 
     if is_number_prime:
         return 'yes'

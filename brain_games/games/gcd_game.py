@@ -1,20 +1,7 @@
-from brain_games.games import functions
+import random
 
 
-def start():
-
-    name = functions.greeting()
-    print('Find the greatest common divisor of given numbers.')
-    functions.response_to_user(name, game)
-
-
-def game():
-
-    right_answer = make_question()
-    user_answer = functions.request_answer()
-    is_answer_correct = functions.check_user_answer(right_answer, user_answer)
-
-    return (right_answer, user_answer, is_answer_correct)
+INSTRUCTION = 'Find the greatest common divisor of given numbers.'
 
 
 def calculation(first_number, second_number):
@@ -31,12 +18,12 @@ def calculation(first_number, second_number):
 
 def make_question():
 
-    num1 = 1
-    num2 = 99
-    random_number1 = functions.random_number(num1, num2)
-    random_number2 = functions.random_number(num1, num2)
+    num_min = 1
+    num_max = 99
+    random_number1 = random.randint(num_min, num_max)
+    random_number2 = random.randint(num_min, num_max)
     question = '{} {}'.format(random_number1, random_number2)
-    print('Question: {}'.format(question))
-    result = calculation(random_number1, random_number2)
 
-    return result
+    correct_answer = str(calculation(random_number1, random_number2))
+
+    return (question, correct_answer)
