@@ -22,5 +22,4 @@ def make_question():
     numbers_list[hidden_element] = '..'
     question = (' '.join(map(str, numbers_list)))
 
-
     return (question, correct_answer)
