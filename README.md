@@ -2,6 +2,7 @@
 
 ![Workflow](https://github.com/foxy-chay/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)
 
+
 # Brain games
 
 Educational project
