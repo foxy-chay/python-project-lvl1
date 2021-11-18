@@ -4,19 +4,17 @@ import random
 INSTRUCTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def make_question():
-
+def make_question_and_correct_answer():
     num_min = 1
     num_max = 99
     random_number = random.randint(num_min, num_max)
     is_number_Prime = isPrime(random_number)
-    correct_answer = get_correct_answer(is_number_Prime)
+    correct_answer = 'yes' if is_it_prime(number) else 'no'
 
-    return (random_number, correct_answer)
+    return random_number, correct_answer
 
 
-def isPrime(number):
-
+def is_it_prime(number):
     if number % 2 == 0:
         return number == 2
 
@@ -24,11 +22,3 @@ def isPrime(number):
     while d * d <= number and number % d != 0:
         d += 2
     return d * d > number
-
-
-def get_correct_answer(is_number_prime):
-
-    if is_number_prime:
-        return 'yes'
-    else:
-        return 'no'

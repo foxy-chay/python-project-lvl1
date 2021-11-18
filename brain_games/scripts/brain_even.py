@@ -1,9 +1,9 @@
-from brain_games.games import even_odd_game
-from brain_games.engine import engine
+from brain_games.games import even_odd
+from brain_games import engine
 
 
 def main():
-    engine.game_logic(even_odd_game)
+    engine.run_game(even_odd)
 
 
 if __name__ == '__main__':
