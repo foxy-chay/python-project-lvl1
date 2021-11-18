@@ -17,7 +17,7 @@ def make_question_and_correct_answer():
     question = '{} {} {}'.format(random_number1,
                                  random_math_symbol, random_number2)
     correct_answer = str(calculate(random_number1,
-                                     random_number2, random_math_symbol))
+                                   random_number2, random_math_symbol))
 
     return question, correct_answer
 
@@ -28,6 +28,6 @@ def calculate(first_number, second_number, math_symbol):
     try:
         correct_answer = dic[math_symbol](first_number, second_number)
     except KeyError:
-        print ('Wrong math symbol')
+        print('Wrong math symbol')
 
     return correct_answer

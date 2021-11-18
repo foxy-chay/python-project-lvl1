@@ -8,7 +8,7 @@ def make_question_and_correct_answer():
     num_min = 1
     num_max = 99
     question = random.randint(num_min, num_max)
-    correct_answer = 'yes' if is_it_even(number) else 'no'
+    correct_answer = 'yes' if is_it_even(question) else 'no'
 
     return question, correct_answer
 

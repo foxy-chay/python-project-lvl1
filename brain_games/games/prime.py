@@ -8,8 +8,7 @@ def make_question_and_correct_answer():
     num_min = 1
     num_max = 99
     random_number = random.randint(num_min, num_max)
-    is_number_Prime = isPrime(random_number)
-    correct_answer = 'yes' if is_it_prime(number) else 'no'
+    correct_answer = 'yes' if is_it_prime(random_number) else 'no'
 
     return random_number, correct_answer
 
