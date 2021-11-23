@@ -1,17 +1,32 @@
 import random
 
-
+PROGRESSION_LENGHT_MIN = 5
+PROGRESSION_LENGHT_MAX = 10
+COMMON_DIF_MIN = 1
+COMMON_DIF_MAX = 9
+START_NUMBER_MIN = 1
+START_NUMBER_MAX = 30
 INSTRUCTION = 'What number is missing in the progression?'
 
 
+def calculate_progression_arguments():
+    progression_length = random.randint(PROGRESSION_LENGHT_MIN,
+                                        PROGRESSION_LENGHT_MAX)
+    start_number = random.randint(START_NUMBER_MIN,
+                                  START_NUMBER_MAX)
+    common_difference = random.randint(COMMON_DIF_MIN,
+                                       COMMON_DIF_MAX)
+
+    return progression_length, start_number, common_difference
+
+
 def make_progression():
-    progression_length = random.randint(5, 10)
-    start_number = random.randint(1, 30)
-    common_difference = random.randint(1, 9)
+    progression_length, start_number,\
+        common_difference = calculate_progression_arguments()
     progression = [start_number]
     number_of_elements = len(progression)
 
-    while number_of_elements < progression_length:
+    for _ in range(number_of_elements, progression_length, 1):
         start_number = start_number + common_difference
         progression.append(start_number)
         number_of_elements += 1

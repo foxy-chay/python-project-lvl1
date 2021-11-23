@@ -1,21 +1,16 @@
 import random
 
-
+NUMBER_MIN = 1
+NUMBER_MAX = 99
 INSTRUCTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def make_question_and_correct_answer():
-    num_min = 1
-    num_max = 99
-    question = random.randint(num_min, num_max)
+    question = random.randint(NUMBER_MIN, NUMBER_MAX)
     correct_answer = 'yes' if is_it_even(question) else 'no'
 
     return question, correct_answer
 
 
 def is_it_even(number):
-    if number % 2 == 0:
-        return True
-
-    else:
-        return False
+    return number % 2 == 0

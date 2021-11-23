@@ -1,5 +1,9 @@
 import prompt
 
+NUMBER_OF_ROUNDS = 3
+START_INDEX = 0
+STEP_INDEX = 1
+
 
 def run_game(game):
     print('Welcome to the Brain Games!')
@@ -7,17 +11,13 @@ def run_game(game):
     print('Hello, {}!'.format(name))
     print(game.INSTRUCTION)
 
-    index = 0
-    number_of_rounds = 3
-
-    while index < number_of_rounds:
+    for _ in range(START_INDEX, NUMBER_OF_ROUNDS, STEP_INDEX):
         question, correct_answer = game.make_question_and_correct_answer()
         print('Question: {}'.format(question))
         user_answer = prompt.string('Your answer: ')
 
         if user_answer == correct_answer:
             print('Correct!')
-            index += 1
         else:
             print("'{}' is wrong answer ;(. "
                   "Correct answer was '{}'".format(user_answer, correct_answer))
