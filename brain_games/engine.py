@@ -1,8 +1,7 @@
 import prompt
 
+
 NUMBER_OF_ROUNDS = 3
-START_INDEX = 0
-STEP_INDEX = 1
 
 
 def run_game(game):
@@ -11,7 +10,7 @@ def run_game(game):
     print('Hello, {}!'.format(name))
     print(game.INSTRUCTION)
 
-    for _ in range(START_INDEX, NUMBER_OF_ROUNDS, STEP_INDEX):
+    for _ in range(NUMBER_OF_ROUNDS):
         question, correct_answer = game.make_question_and_correct_answer()
         print('Question: {}'.format(question))
         user_answer = prompt.string('Your answer: ')
