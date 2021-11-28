@@ -26,7 +26,7 @@ def make_progression():
     progression = [start_number]
     number_of_elements = len(progression)
 
-    for _ in range(number_of_elements, progression_length, 1):
+    for _ in range(number_of_elements, progression_length):
         start_number = start_number + common_difference
         progression.append(start_number)
         number_of_elements += 1
