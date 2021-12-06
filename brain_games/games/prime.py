@@ -8,7 +8,6 @@ INSTRUCTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 def make_question_and_correct_answer():
     random_number = random.randint(NUMBER_MIN, NUMBER_MAX)
     correct_answer = 'yes' if is_it_prime(random_number) else 'no'
-
     return random_number, correct_answer
 
 
