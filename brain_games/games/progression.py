@@ -10,7 +10,6 @@ INSTRUCTION = 'What number is missing in the progression?'
 
 
 def make_progression(progression_length, start_number, common_difference):
-    
     progression = [start_number]
     number_of_elements = len(progression)
 
@@ -30,7 +29,8 @@ def make_question_and_correct_answer():
                                   START_NUMBER_MAX)
     common_difference = random.randint(COMMON_DIF_MIN,
                                        COMMON_DIF_MAX)
-    progression = make_progression(progression_length, start_number, common_difference)
+    progression = make_progression(progression_length,
+                                   start_number, common_difference)
     hidden_element = random.randint(0, len(progression) - 1)
     correct_answer = str(progression[hidden_element])
     progression[hidden_element] = '..'
