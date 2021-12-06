@@ -9,20 +9,8 @@ START_NUMBER_MAX = 30
 INSTRUCTION = 'What number is missing in the progression?'
 
 
-def calculate_progression_arguments():
-    progression_length = random.randint(PROGRESSION_LENGHT_MIN,
-                                        PROGRESSION_LENGHT_MAX)
-    start_number = random.randint(START_NUMBER_MIN,
-                                  START_NUMBER_MAX)
-    common_difference = random.randint(COMMON_DIF_MIN,
-                                       COMMON_DIF_MAX)
-
-    return progression_length, start_number, common_difference
-
-
-def make_progression():
-    progression_length, start_number,\
-        common_difference = calculate_progression_arguments()
+def make_progression(progression_length, start_number, common_difference):
+    
     progression = [start_number]
     number_of_elements = len(progression)
 
@@ -35,7 +23,14 @@ def make_progression():
 
 
 def make_question_and_correct_answer():
-    progression = make_progression()
+
+    progression_length = random.randint(PROGRESSION_LENGHT_MIN,
+                                        PROGRESSION_LENGHT_MAX)
+    start_number = random.randint(START_NUMBER_MIN,
+                                  START_NUMBER_MAX)
+    common_difference = random.randint(COMMON_DIF_MIN,
+                                       COMMON_DIF_MAX)
+    progression = make_progression(progression_length, start_number, common_difference)
     hidden_element = random.randint(0, len(progression) - 1)
     correct_answer = str(progression[hidden_element])
     progression[hidden_element] = '..'
