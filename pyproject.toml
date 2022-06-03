@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.0"
+version = "0.2.0"
 description = "mind games"
 authors = ["volav <2025651+volAV@users.noreply.github.com>"]
 license = "ISC"
@@ -10,6 +10,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
+prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
 
