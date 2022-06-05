@@ -3,11 +3,24 @@
 import prompt
 
 
-def welcome_user():
-    """Says hello to user.
+def ask_user(question):
+    """Asks user a passed questin and waits for input.
+
+    Args:
+        question: Text with question for user.
 
     Returns:
-        Greeting with user name.
+        User's input.
     """
-    name = prompt.string('May I have your name? ')
-    return 'Hello, {0}!'.format(name)
+    return prompt.string(question)
+
+
+def welcome_user():
+    """Asks for username and greets in response.
+
+    Returns:
+        Username.
+    """
+    user_name = ask_user('May I have your name? ')
+    print('Hello, {0}!'.format(user_name))
+    return user_name
