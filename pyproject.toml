@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.4.0"
+version = "0.4.1"
 description = "mind games"
 authors = ["volav <2025651+volAV@users.noreply.github.com>"]
 license = "ISC"

@@ -2,7 +2,7 @@
 
 from random import randint
 
-from brain_games.cli import ask_user
+from brain_games.cli import ask_user, tell_user_correct_answer
 
 
 def start_game(game_rounds, numbers_range):
@@ -18,31 +18,19 @@ def start_game(game_rounds, numbers_range):
     """
     for _ in range(game_rounds):
         # Generate and show user a number
-        number = _generate_number(numbers_range)
-        print('Question: {0}'.format(number))
+        generated_number = _generate_number(numbers_range)
+        print('Question: {0}'.format(generated_number))
 
         # Ask user for answer
-        answer = ask_user('Your answer: ')
+        user_answer = ask_user('Your answer: ')
 
         # Check answer correcteness
-        correct = _is_correct(number, answer)
-        if correct:
-            print('Correct!')
-        else:
+        expected_answer = 'yes' if _is_even(generated_number) else 'no'
+        if user_answer.lower() != expected_answer:
+            tell_user_correct_answer(expected_answer, user_answer.lower())
             return False
 
-    return True
-
-
-def _is_correct(generated_number, user_answer):
-    user_answer = user_answer.lower()
-    correct_answer = 'Yes' if _is_even(generated_number) else 'No'
-
-    if user_answer.lower() != correct_answer.lower():
-        print('"{0}" is wrong answer ;(. Correct answer was "{1}".'.format(
-            user_answer, correct_answer,
-        ))
-        return False
+        print('Correct!')
 
     return True
 

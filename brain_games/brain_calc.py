@@ -2,7 +2,7 @@
 
 from random import choice, randint
 
-from brain_games.cli import ask_user
+from brain_games.cli import ask_user, tell_user_correct_answer
 
 
 def start_game(game_rounds, max_number):
@@ -23,21 +23,11 @@ def start_game(game_rounds, max_number):
         user_answer = ask_user('Your answer: ')
 
         # Check answer correcteness
-        correct = _is_correct(expected_answer, user_answer)
-        if correct:
-            print('Correct!')
-        else:
+        if int(user_answer) != int(expected_answer):
+            tell_user_correct_answer(expected_answer, user_answer)
             return False
 
-    return True
-
-
-def _is_correct(expected_answer, user_answer):
-    if int(user_answer) != int(expected_answer):
-        print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(
-            user_answer, expected_answer,
-        ))
-        return False
+        print('Correct!')
 
     return True
 
