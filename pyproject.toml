@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.2.2"
+version = "0.3.0"
 description = "mind games"
 authors = ["volav <2025651+volAV@users.noreply.github.com>"]
 license = "ISC"
@@ -17,6 +17,7 @@ wemake-python-styleguide = "^0.16.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

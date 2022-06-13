@@ -4,7 +4,7 @@ import prompt
 
 
 def ask_user(question):
-    """Asks user a passed questin and waits for input.
+    """Ask user a questin and wait for input.
 
     Args:
         question: Text with question for user.
@@ -16,7 +16,7 @@ def ask_user(question):
 
 
 def welcome_user():
-    """Asks for username and greets in response.
+    """Ask for username and greet in response.
 
     Returns:
         Username.
