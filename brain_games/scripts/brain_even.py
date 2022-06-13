@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Entrypoint of Brain Even game."""
 
-from brain_games.brain_even import start_game
 from brain_games.cli import cheer_user_up, welcome_user
+from brain_games.games.brain_even import start_game
 
 
 def main():
